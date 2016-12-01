@@ -1,3 +1,5 @@
+compile gcd.c like this: `gcc -o gcd gcd.c -lgmp`
+
 to test generate two signed messages like this:
 
 echo -n "message1" | gpg --sign >signedmsg1
