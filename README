@@ -1,6 +1,11 @@
-compile gcd.c like this: `gcc -o gcd gcd.c -lgmp`
+python deps: py3 and python-pgp
+c deps: gmp
 
-to test generate two signed messages like this:
+compile
+gcd.c like this: `gcc -o gcd gcd.c -lgmp`
+
+test
+generate two signed messages like this:
 
 echo -n "message1" | gpg --sign >signedmsg1
 echo -n "message2" | gpg --sign >signedmsg2
