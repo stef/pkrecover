@@ -1,0 +1,7 @@
+to test generate two signed messages like this:
+
+echo -n "message1" | gpg --sign >signedmsg1
+echo -n "message2" | gpg --sign >signedmsg2
+
+then run:
+bash recover.sh signedmsg1 signedmsg2 >recoveredpubkey
